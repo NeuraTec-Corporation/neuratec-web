@@ -1,0 +1,1 @@
+export default function sitemap(){return [{url:"https://us-neuratec.com",lastModified:new Date(),changeFrequency:"weekly",priority:1}]}
