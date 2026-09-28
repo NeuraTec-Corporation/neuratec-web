@@ -1,20 +1,47 @@
-const solutions=[
-["☁","Cloud & Infrastructure","Modern, scalable and secure infrastructure engineered around uptime, performance and growth."],
-["⬡","Cybersecurity","Identity, segmentation, resilience, backup and recovery designed into the environment."],
-["✦","AI + Automation","Intelligent agents and governed workflows that reduce repetitive work and accelerate operations."],
-["◉","Managed IT Services","Accountable support for users, devices, Microsoft 365 and day-to-day technology operations."]
+const capabilities=[
+["☁","Cloud & Infrastructure","Modern, scalable and secure environments."],
+["♢","Cybersecurity","Proactive protection for people, data and operations."],
+["✦","AI + Automation","Intelligent workflows designed around real operations."],
+["▦","Microsoft 365","Modern collaboration, identity and productivity."],
+["</>","Custom Solutions","Purpose-built systems for unique business needs."]
 ];
-const industries=[["♡","Healthcare & Dental"],["◇","Automotive & Service"],["▦","Technology & IT"],["◎","Professional Services"],["▥","Multi-Location & B2B"],["⌁","Manufacturing & Logistics"],["•••","Custom Solutions"]];
-export const metadata={title:"NeuraTec Corporation | Enterprise Technology + AI Operations",description:"Managed IT, AI automation, cybersecurity, cloud infrastructure and custom technology systems for modern businesses."};
-export default function Home(){return <main className="vFinal">
-<nav className="vNav"><a className="vBrand" href="#"><span className="vMark">⌁</span><span>Neura<b>Tec</b><small>CORPORATION</small></span></a><div><a href="#solutions">Solutions⌄</a><a href="#industries">Industries⌄</a><a href="#ai">AI + Automation⌄</a><a href="#about">About</a><a href="#resources">Resources⌄</a></div><a className="vPrimary" href="#contact">Build with us <b>→</b></a></nav>
-<section className="vHero"><div className="vBackdrop"/><div className="vHeroCopy"><span>ENTERPRISE TECHNOLOGY / AI-NATIVE OPERATIONS</span><h1>Technology should<br/>not just support.<br/><em>It should operate.</em></h1><p>NeuraTec designs, integrates, secures and operates the technology modern businesses depend on — from infrastructure and cybersecurity to AI, automation and custom business systems.</p><div className="vActions"><a href="#contact">Start a conversation <b>→</b></a><a href="#solutions">Explore capabilities</a></div></div>
-<div className="vHub"><div className="vSphere"><i/><i/><strong>N</strong></div><article className="hub1"><b>☁</b><div><strong>Managed IT & Cloud</strong><span>Secure, scalable infrastructure.</span></div></article><article className="hub2"><b>⬡</b><div><strong>Cybersecurity</strong><span>Protect data, people and operations.</span></div></article><article className="hub3"><b>✦</b><div><strong>AI + Automation</strong><span>Turn manual work into intelligent workflows.</span></div></article><article className="hub4"><b>↗</b><div><strong>Strategic IT Advisory</strong><span>Align technology with business goals.</span></div></article><article className="hub5"><b>▦</b><div><strong>Microsoft 365</strong><span>Modern collaboration and productivity.</span></div></article><article className="hub6"><b>⌘</b><div><strong>Custom Solutions</strong><span>Purpose-built systems for unique needs.</span></div></article></div></section>
-<section className="vEvidence"><article><b>ONE</b><span>Technology partner</span></article><article><b>END-TO-END</b><span>Infrastructure to AI</span></article><article><b>GOVERNED</b><span>Security + human authority</span></article><article><b>BUILT TO FIT</b><span>Technology around your operation</span></article></section>
-<section id="solutions" className="vSolutions"><header><span>OUR SOLUTIONS</span><h2>End-to-end technology<br/><em>for what’s next.</em></h2><p>From day-to-day IT operations to AI-driven transformation, NeuraTec delivers secure, scalable and intelligent solutions designed around how your business actually works.</p><a href="#contact">View all solutions →</a></header><div className="vSolutionCards">{solutions.map(([ic,t,d],i)=><article key={t} className={"sol"+i}><div className="vPhoto"><b>{ic}</b><i/></div><h3>{t}</h3><p>{d}</p><a href="#contact">→</a></article>)}</div></section>
-<section id="ai" className="vAi"><div className="vAiVisual"><div className="vAiOrb"><strong>AI</strong><span>IN YOUR BUSINESS</span></div><div className="vAiNode nA">PEOPLE</div><div className="vAiNode nB">SYSTEMS</div><div className="vAiNode nC">DATA</div><div className="vAiNode nD">WORKFLOWS</div></div><div className="vAiCopy"><span>AI FOR REAL OPERATIONS</span><h2>Move AI out of<br/>the chat window.</h2><p>We build intelligent operating experiences around your existing business — connecting people, systems, data and governed AI execution.</p><ul><li>AI agents with defined responsibilities</li><li>Human approval for material actions</li><li>Integration with existing business systems</li><li>Permissions, auditability and operational control</li></ul></div></section>
-<section id="industries" className="vIndustries"><header><span>INDUSTRIES WE SERVE</span><h2>Tailored solutions<br/><em>for real operations.</em></h2></header><div>{industries.map(([ic,t])=><article key={t}><b>{ic}</b><span>{t}</span></article>)}</div></section>
-<section id="about" className="vAbout"><div><span>ONE TECHNOLOGY PARTNER</span><h2>Infrastructure beneath.<br/><em>Intelligence above.</em></h2><p>Networks, cloud, security, software, data and intelligent automation engineered as one business-aligned environment.</p></div><div className="vStack"><article><b>AI + AUTOMATION</b><span>Agents · orchestration · governed execution</span></article><article><b>APPLICATIONS + WORKFLOWS</b><span>Portals · dashboards · operational systems</span></article><article><b>DATA + INTEGRATION</b><span>APIs · events · connected information</span></article><article><b>IDENTITY + SECURITY</b><span>Access · policy · resilience · continuity</span></article><article><b>CLOUD + SERVERS + NETWORK + EDGE</b><span>The infrastructure everything runs on</span></article></div></section>
-<section id="contact" className="vContact"><span>START WITH THE BUSINESS PROBLEM</span><h2>What should technology<br/>do better for you?</h2><p>Tell us where the friction is. We’ll design the technology around the operation.</p><a href="mailto:contact@us-neuratec.com">BUILD WITH NEURATEC →</a></section>
-<footer><b>NeuraTec Corporation</b><span>Enterprise Technology · AI-Native Operations</span><span>© 2026</span></footer>
+const industries=[
+["Healthcare & Dental","Secure, reliable technology for patient-centered operations.","https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80"],
+["Automotive & Service","Connected workflows from intake through delivery.","https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=900&q=80"],
+["Professional Services","Secure collaboration and smarter business workflows.","https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80"],
+["Manufacturing & Logistics","Resilient infrastructure for connected operations.","https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=900&q=80"]
+];
+export const metadata={title:"NeuraTec Corporation | Technology + AI for Business",description:"NeuraTec designs, integrates and manages secure technology, cloud, cybersecurity, AI automation and custom systems around real business operations."};
+function Icon({children}){return <span className="icon">{children}</span>}
+export default function Home(){return <main className="site">
+<nav className="nav"><a className="brand" href="#"><span className="brandMark">N</span><span>Neura<span>Tec</span><small>CORPORATION</small></span></a><div className="navLinks"><a href="#solutions">Solutions⌄</a><a href="#industries">Industries⌄</a><a href="#ai">AI + Automation⌄</a><a href="#about">About</a><a href="#resources">Resources⌄</a></div><a className="btn primary" href="#contact">Contact Us <b>→</b></a></nav>
+
+<section className="hero">
+<div className="heroShade"/>
+<div className="heroCopy"><div className="eyebrow">PEOPLE · TECHNOLOGY · REAL RESULTS</div><h1>AI-Driven<br/>Technology for<br/><em>a Stronger Business.</em></h1><p>We design, integrate and manage secure, scalable and intelligent technology solutions to help your business grow — today and for what’s next.</p><div className="actions"><a className="btn primary" href="#contact">Get Started →</a><a className="btn outline" href="#solutions">Our Solutions</a></div></div>
+<div className="heroTech"><div className="core"><span>N</span><i/><i/><i/></div><div className="circuit c1"/><div className="circuit c2"/></div>
+<div className="heroCards">{capabilities.map(([i,t,d])=><article key={t}><Icon>{i}</Icon><div><strong>{t}</strong><small>{d}</small></div><b>→</b></article>)}</div>
+</section>
+
+<section id="solutions" className="capabilities">{capabilities.map(([i,t,d])=><article key={t}><Icon>{i}</Icon><strong>{t}</strong><p>{d}</p><a href="#contact">→</a></article>)}</section>
+
+<section id="industries" className="industries section">
+<div className="industryIntro"><div className="eyebrow">INDUSTRIES WE SERVE</div><h2>Real technology<br/><em>for real industries.</em></h2><p>We understand the operational challenges behind each environment and design technology around the way the business works.</p><a className="btn primary" href="#contact">Explore All Industries →</a></div>
+<div className="industryGrid">{industries.map(([t,d,img])=><article key={t}><div className="industryPhoto" style={{backgroundImage:`url("${img}")`}}/><div className="industryBody"><Icon>⌁</Icon><h3>{t}</h3><p>{d}</p><a href="#contact">→</a></div></article>)}</div>
+</section>
+
+<section className="trust"><article><Icon>◇</Icon><div><b>Trusted Partner</b><span>Long-term relationships</span></div></article><article><Icon>◎</Icon><div><b>Business Focused</b><span>Technology aligned to operations</span></div></article><article><Icon>↗</Icon><div><b>End-to-End</b><span>From strategy to execution</span></div></article><article><Icon>⚙</Icon><div><b>Built to Fit</b><span>Solutions around your business</span></div></article></section>
+
+<section id="ai" className="global">
+<div className="globalCopy"><div className="eyebrow">GLOBAL TECHNOLOGY PARTNER</div><h2>Connecting<br/>Businesses<br/><em>Without Limits.</em></h2><p>Secure, scalable and intelligent IT solutions for a more connected world.</p><div className="actions"><a className="btn primary" href="#about">Our Approach →</a><a className="btn outline" href="#contact">Global Reach</a></div></div>
+<div className="globe" aria-hidden="true"><div className="earth"/><i className="arc a1"/><i className="arc a2"/><i className="arc a3"/><i className="dot d1"/><i className="dot d2"/><i className="dot d3"/><i className="dot d4"/></div>
+<div className="globalCards">{capabilities.map(([i,t,d])=><article key={t}><Icon>{i}</Icon><div><strong>{t}</strong><small>{d}</small></div><b>→</b></article>)}</div>
+</section>
+
+<section id="about" className="partner">
+<div className="partnerCopy"><div className="eyebrow">LET’S BUILD WHAT’S NEXT</div><h2>Your strategic technology<br/>partner for <em>a stronger tomorrow.</em></h2><p>Whether you need more secure infrastructure, smarter workflows or a complete IT transformation, NeuraTec is here to help.</p><div className="actions"><a className="btn primary" href="mailto:contact@us-neuratec.com">Contact Us →</a><a className="btn outline" href="mailto:contact@us-neuratec.com">Talk to an Expert</a></div></div>
+<div className="building" role="img" aria-label="Conceptual modern technology campus visual"><div className="buildingBrand"><span className="brandMark">N</span> Neura<span>Tec</span></div></div>
+<div className="partnerList"><span>✓ Strategic Advisory</span><span>✓ Implementation</span><span>✓ Ongoing Support</span><span>✓ Measurable Outcomes</span></div>
+</section>
+<section id="contact" className="footer"><div className="brand"><span className="brandMark">N</span><span>Neura<span>Tec</span><small>CORPORATION</small></span></div><p>Enterprise technology designed around the business.</p><a href="mailto:contact@us-neuratec.com">contact@us-neuratec.com</a></section>
 </main>}
