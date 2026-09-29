@@ -7,7 +7,7 @@ const capabilities=[
 ];
 const industries=[
 ["medical","Healthcare & Dental","Secure, reliable technology for patient-centered operations.","https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=90"],
-["auto","Automotive & Service","Connected workflows from intake through delivery.","https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e18?auto=format&fit=crop&w=1000&q=90"],
+["auto","Automotive & Service","Connected workflows from intake through delivery.","https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1000&q=90"],
 ["brief","Professional Services","Secure collaboration and smarter business workflows.","https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=90"],
 ["factory","Manufacturing & Logistics","Resilient infrastructure for connected operations.","https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=90"]
 ];
@@ -40,7 +40,7 @@ export default function Home(){return <main className="site">
 <section className="hero">
 <div className="heroShade"/>
 <div className="heroCopy"><div className="eyebrow">PEOPLE · TECHNOLOGY · REAL RESULTS</div><h1>AI-Driven<br/>Technology for<br/><em>a Stronger Business.</em></h1><p>We design, integrate and manage secure, scalable and intelligent technology solutions to help your business grow — today and for what’s next.</p><div className="actions"><a className="btn primary" href="#contact">Get Started →</a><a className="btn outline" href="#solutions">Our Solutions</a></div></div>
-<div className="heroTech" aria-hidden="true"><div className="core"><span className="coreN"><i/><i/></span></div><div className="pulse p1"/><div className="pulse p2"/><div className="pulse p3"/></div>
+<div className="heroTech" aria-hidden="true"><div className="techLines l1"/><div className="techLines l2"/><div className="techLines l3"/><div className="core"><span className="coreN"><i/><i/></span></div><div className="pulse p1"/><div className="pulse p2"/><div className="pulse p3"/></div>
 <ServiceCards className="heroCards"/>
 </section>
 
