@@ -1,0 +1,1 @@
+export default function sitemap(){const base="https://us-neuratec.com";return ["","/solutions"].map((path,i)=>({url:base+path,lastModified:new Date(),changeFrequency:"weekly",priority:i===0?1:.9}))}

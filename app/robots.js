@@ -1,0 +1,1 @@
+export default function robots(){return {rules:{userAgent:"*",allow:"/"},sitemap:"https://us-neuratec.com/sitemap.xml"}}
